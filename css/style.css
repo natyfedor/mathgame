@@ -1,0 +1,155 @@
+html{
+    box-sizing: border-box;
+}
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+body{
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color:lightblue;
+    font-family: 'Kanit' , sans-serif;
+}
+h1{
+    font-weight: 800;
+    font-size: 72px;
+    color: coral;
+
+    text-align: center;
+}
+
+#run{
+    margin-left: 25%;
+    max-width: 50%;
+    background-color: chartreuse;
+    border-radius: 5px;
+}
+#run:focus, #run:hover{
+    background-color:rgb(7, 191, 7);
+}
+#press{
+    font-size: 92px;
+    font-weight: 800;
+    color:darkcyan;
+    border-radius: 5px;
+    background-color: rgba(255, 248, 220, .85);
+    padding: 2%;
+    position: absolute;
+    margin-left: 25%;
+    margin-top: -4%;
+    z-index: 10;
+
+}
+#gameOver{
+    font-size: 92px;
+    font-weight: 800;
+    color: darkred;
+    border-radius: 5px;
+    background-color: rgba(255, 248, 220, .85);
+    padding: 2%;
+    position: absolute;
+    margin-left: 25%;
+    margin-top: -4%;
+    z-index: 5;
+    visibility: hidden;
+}
+#win{
+    font-size: 92px;
+    font-weight: 800;
+    color: green;
+    border-radius: 5px;
+    background-color: rgba(255, 248, 220, .85);
+    padding: 2%;
+    position: absolute;
+    margin-left: 25%;
+    margin-top: -4%;
+    z-index: 5;
+    visibility: hidden;
+}
+.wrapper{
+    width: 100%;
+    min-height: 96px;
+    display: block;
+    padding-left: 25%;
+
+}
+.example li{
+    display: block;
+    max-width: 30%;
+    list-style: none;
+    float: left;
+    padding-left: 2%;
+    font-weight: 600;
+    font-size: 64px;
+
+}
+#num1{
+    color:darkblue;
+}
+#operator{
+    color: darkgreen;
+}
+#num2{
+    color: darkorchid;
+}
+#equals{
+    color:brown;
+}
+form{  
+    display: block;
+    height: 72px;
+    margin-top: -1%;}
+input{
+    height: 56px;
+    max-width: 60%;
+    font-size: 54px;
+    border: none;
+    border-radius: 5%;
+    padding-bottom: 0;
+    background-color: rgba(108, 122, 137, .23);
+    margin-right: 0%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input:active,input:focus{
+    border: none !important;
+    outline: none !important;} 
+
+#check{
+    position: absolute;
+    font-family: 'Kanit' , sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 5px;
+    margin-top: 1.75rem;
+    background-color:rgba(255, 127, 80,.7);
+}
+#check:hover{
+    background-color: rgba(255, 127, 80,1);
+}
+.status ul{
+    display: block;
+    margin-left: 25%;
+    max-width: 100%;
+}
+ .status li{
+    list-style: none;
+    max-height: 72px;
+}
+h2, h3{
+    display: inline-block;
+    padding: .5%;
+}
+h2{
+    font-size: 54px;
+}
+h3{
+    font-size: 36px;
+    font-weight: 400;
+}

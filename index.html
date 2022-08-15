@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <title>TRY YOUR MATH</title> 
+</head>
+<body>
+    <h1>TRY YOUR MATH</h1>
+    <div id="run"><h1>PLAY</h1></div>
+    <div id="press">press play!</div>
+    <div id="gameOver">GAME OVER!</div>
+    <div id="win">You Win!!!</div>
+    <div class="wrapper">
+        <ul class="example">
+                <li id="num1">1</li>
+                <li id="operator">+</li>
+                <li id="num2">2</li>
+                <li id="equals">=</li>
+                <li> <form id="form">
+                    <input type="number" id="myansw" autocomplete="off">
+                    <button id="check">CHECK</button>
+                </form></li>
+            </ul>
+    </div>
+   <div class="status">
+    <ul>
+        <li>
+            <h3>SCORE:</h3> <h2 id="score">0</h2> </li>
+        <li>
+            <h3>LEVEL:</h3> <h2 id="level">1</h2> </li>
+        <li>
+            <h3>Remaining time:</h3> <h3 id="time">15</h2>s<h3></h2> </li>
+    </ul>
+   </div>
+<audio src="/audio/wrong.mp3" id="audio"></audio>
+<audio src="/audio/game-win.mp3" id="gameWin"></audio>
+<script src="/js/script.js"></script>
+
+</body>
+</html>
